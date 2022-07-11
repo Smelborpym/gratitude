@@ -1,0 +1,16 @@
+{
+    "thank - (?:god|lord)": [{"LEMMA": {"IN": ["thank","Thank","thanks","Thanks"]}}, {"LEMMA": {"NOT_IN": ["god", "lord"]}}],
+    "I/we - appreciate/congratulate/owe/value/treasure/acknowledge/...": [{"TAG": "PRP"}, {"LEMMA": {"IN": ["appreciate","congratulate", "owe", "value", "treasure", "recognize", "acknowledge"]}}],
+    "you - be - the - best/greatest/swetest/...": [{"TAG": "PRP"}, {"LEMMA": "be"}, {"TAG":"DET"}, {"TAG":"JJS"}],
+    "I/we - be - grateful/thankful/appreciative/...": [{"LOWER": {"IN": ["we", "i"]}}, {"LEMMA":"be"}, {"LEMMA": {"IN": ["grateful", "thankful", "indebted", "appreciative"]}}],
+    "very/extremely/truly/... - grateful/thankful/...": [{"LOWER": {"IN":["very", "so", "extremely", "deeply", "really", "truly", "genuinely"]}}, {"LEMMA": {"IN": ["grateful", "thankful", "indebted", "appreciative"]}}],
+    "I/we - be - thankful/indebted/...": [{"LOWER": {"IN":["we", "i"]}}, {"LEMMA":"be"}, {"TAG":"PRP"}, {"LEMMA": {"IN": ["grateful", "thankful", "indebted"]}}],
+    "good/amazing/excellent/... - work/job/initiative/...": [{"LEMMA": {"IN": ["great", "good", "amazing", "excellent"]}}, {"LEMMA": {"IN": ["work", "job", "initiative"]}}],
+    "I/we - truly/really/deeply/... - like/appreciate/owe/recognize/...": [{"TAG":"PRP"}, {"TAG":"RB"}, {"LEMMA":{"IN":["like", "appreciate", "owe", "value", "treasure", "recognize", "acknowledge"]}}],
+    "kind/sweet/thougtful/... - of - you": [{"LOWER":{"IN": ["kind", "nice", "sweet", "thoughtful"]}}, {"LOWER":"of"}, {"LOWER":"you"}],
+    "express - our/my - gratitude/acknowledgment/appreciativeness/...": [{"LOWER": "express"}, {"LOWER": {"IN": ["my", "our"]}}, {"LOWER": {"IN": ["acknowledgment", "appreciativeness", "appreciation", "gratefulness","gratitude","thankfulness","appreciation"]}}],
+    "how - grateful/thankful/... - I/we - be": [{"LOWER": "how"}, {"LOWER": {"IN":["grateful", "thankful", "appreciative"]}}, {"LOWER": {"IN":["we", "i"]}}, {"LEMMA": "be"}], 
+    "I/we - be - grateful": [{"LOWER": {"IN": ["we're", "i'm"]}}, {"LEMMA": {"IN": ["grateful", "thankful", "indebted"]}}],
+    "I'm/we're - very/so/... - grateful/thankful/...": [{"LOWER": {"IN": ["we're", "i'm"]}}, {"LOWER": {"IN":["very", "so", "extremely", "deeply", "really", "truly"]}}, {"LEMMA": {"IN": ["grateful", "thankful", "indebted"]}}],
+    "you - rock": [{"LOWER": "you"}, {"LOWER": "rock"}]
+}
